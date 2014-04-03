@@ -40,15 +40,14 @@ $(document).ready(function() {
             return false;
         }
 
-        var data_string = $('.touch form').serialize();
-
-        var email = {
+        var emailJsonObject = {
             From: $('#email').val(),
             Subject: 'allenfirth.info web message from: ' + $('#name').val(),
-            Body: $('#message').val()
+            Body: $('#message').val(),
+            To: 'allen.firth@gmail.com'
         };
         //alert('about to post: From: ' + email.From + ', Subject: ' + email.Subject + ', Body: ' + email.Body);
-        $.post('http://simplewebapimailer.cloudapp.net:80/api/send', email, function(data) {
+        $.post('http://simplewebapimailer.cloudapp.net:80/api/send', emailJsonObject, function(data) {
             $('#success').fadeIn('slow');
         }).fail(function() {
             $('#failure').fadeIn('slow');
