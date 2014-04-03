@@ -1039,12 +1039,12 @@ ul li.item a {
 }
 
 
-.touch input[type="text"]:focus, .touch textarea:focus, .respondForm input[type="email"]:focus{
+.touch input[type="text"]:focus, .touch textarea:focus, .touch input[type="email"]:focus{
 	background: #FCFCFC;
 	
 }
 
-.touch input[type="text"],.respondForm input[type="email"] {
+.touch input[type="text"],.touch input[type="email"] {
 	
 	width: 500px;
 	height: 35px;
@@ -1059,7 +1059,7 @@ ul li.item a {
 	
 }
 
-input#formSubmit {
+button#formSubmit {
 	
 	background:#363F48;
     border: none;
@@ -1067,6 +1067,7 @@ input#formSubmit {
     cursor: pointer;
     display: inline-block;
     margin-top: 25px;
+    margin-right:15px;
     padding: 12px 20px;
 	text-transform:uppercase;
 	border-radius:3px;
@@ -1080,7 +1081,7 @@ input#formSubmit {
 }
 
 
-input#formSubmit:hover{
+button#formSubmit:hover{
 	background:#F48975;
 }
 
@@ -1091,17 +1092,15 @@ a:hover{
 	color:#F48975;
 }
 
-#success{
+#success, #failure{
 	display:none;
 }
 
-#success h2 {
+#success h2, #failure h2 {
     color: #F48975;
-    font-size: 11px;
-    right: 22px;
-    position: absolute;
-    top: 45px;
+    font-size: 14px;
 	font-family: 'robotobold';
+	margin:10px;
 }
 
 .errorForm {
@@ -1386,7 +1385,7 @@ a:hover{
 	.titleMedium h2 {font-size: 17px;margin-left: -18px;margin-top: 37px;}
 	.touch, .info{width:230px;}
 	.touch{margin-bottom:20px;}
-	.touch input[type="text"], .respondForm input[type="email"]{width:210px;}
+	.touch input[type="text"], .touch input[type="email"]{width:210px;}
 	.touch textarea{width:212px;}
 	.touch form{width:224px;}
 	#toTop{display:none !important;}
