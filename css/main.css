@@ -444,6 +444,14 @@ nav#mainNav li a:hover{
 	text-align: justify;
 }
 
+.exp ul{
+    list-style: circle;
+    list-style-type: circle;
+}
+.exp ul li{
+    text-align: left;
+}
+
 .educ:last-child, .exp:last-child{
 	margin-bottom:0;
 }
